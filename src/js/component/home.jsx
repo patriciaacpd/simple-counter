@@ -3,23 +3,20 @@ import React from "react";
 //include images into your bundle
 import rigoImage from "../../img/rigo-baby.jpg";
 
-//create your first component
-const Home = () => {
+const Home = ({first,second,third, fourth,fifth,sixth}) => {
 	return (
-		<div className="text-center">
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
-		</div>
+		
+			<div className ="d-flex justify-content-center bg-black text-white fs-1 p-3 my-3 mx-2 gap-2">
+			<div className="bg-dark border border-secondary rounded p-2"><i className ="far fa-clock"></i></div>
+			<div className="bg-dark border border-secondary rounded p-2 ">{sixth}</div>
+			<div className="bg-dark border border-secondary rounded p-2 ">{fifth}</div>
+			<div className="bg-dark border border-secondary rounded p-2 ">{fourth}</div>
+			<div className="bg-dark border border-secondary rounded p-2 ">{third}</div>
+			<div className="bg-dark border border-secondary rounded p-2 ">{second}</div>
+			<div className="bg-dark border border-secondary rounded p-2 ">{first}</div>
+			
+			</div>
+			
 	);
 };
 
